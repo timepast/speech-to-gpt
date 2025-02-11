@@ -1,0 +1,24 @@
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3 {
+  margin: 0; /* 缩小标题的上下间距 */
+  font-weight: bold;
+}
+
+.markdown-content p {
+  margin: 0; /* 缩小段落的上下间距 */
+  line-height: 1.5; /* 优化行间距 */
+}
+
+.markdown-content ul {
+  margin: 0; /* 缩小列表的上下间距 */
+  padding-left: 20px; /* 缩进 */
+}
+
+.markdown-content li {
+  margin: 0; /* 缩小列表项之间的间距 */
+}
+
+.markdown-content strong {
+  font-weight: bold; /* 加强加粗效果 */
+}

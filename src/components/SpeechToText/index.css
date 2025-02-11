@@ -1,0 +1,220 @@
+.editor-container {
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  min-height: 150px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+
+.semi-input-textarea {
+  border: 0 solid transparent;
+  box-shadow: none;
+  width: 100%;
+}
+
+.semi-input-textarea:hover {
+  border-color: transparent;
+}
+
+.semi-input-textarea:focus {
+  border: 0 solid transparent; /* 确保 focus 状态下无边框 */
+  outline: none; /* 防止浏览器显示默认 outline */
+}
+
+.semi-icon {
+  display: inline-block;
+  font-style: normal;
+  line-height: 0;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  fill: currentColor;
+}
+.semi-button.semi-button-with-icon {
+  align-items: center;
+  display: inline-flex;
+}
+
+.semi-button.semi-button-with-icon .semi-button-content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.semi-button.semi-button-loading {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.semi-button.semi-button-loading .semi-button-content > svg {
+  animation: semi-animation-rotate 0.6s linear infinite;
+  animation-fill-mode: forwards;
+  height: 16px;
+  width: 16px;
+}
+
+.semi-button.semi-button-with-icon-only {
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+}
+
+.semi-button.semi-button-with-icon-only.semi-button-size-small {
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+}
+
+.semi-button.semi-button-with-icon-only.semi-button-size-large {
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+}
+
+.semi-button-content-left {
+  margin-right: 8px;
+}
+
+.semi-button-content-right {
+  margin-left: 8px;
+}
+
+.semi-portal-rtl .semi-button,
+.semi-rtl .semi-button {
+  direction: rtl;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.semi-icon-default {
+  font-size: 30px;
+}
+
+.bottom-tools-wrap {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  text-align: right;
+}
+
+.semi-button.send-btn {
+  padding: 0;
+  margin-left: 10px;
+  width: 32px;
+  height: 32px;
+}
+
+button:focus {
+  border: 0 solid transparent; /* 确保 focus 状态下无边框 */
+  outline: none; /* 防止浏览器显示默认 outline */
+}
+
+.icon-mic-voice {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.icon-mic-voice:hover {
+  color: orange;
+}
+
+.icon-mic-voice.recording {
+  color: blue;
+}
+
+span[data-tooltip] {
+  position: relative;
+  cursor: pointer;
+}
+
+span[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 12px 8px;
+  border-radius: 10px;
+  white-space: nowrap;
+  font-size: 12px;
+  opacity: 1;
+  transition: opacity 0.1s ease-in; /* 让 Tooltip 显示更快 */
+}
+
+span[data-tooltip]:hover::before {
+  content: "";
+  position: absolute;
+  top: -8px; /* 控制三角形位置 */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent; /* 三角形颜色 */
+}
+
+.markdown {
+  white-space: normal;
+}
+
+.markdown p {
+  margin: 0.5rem;
+}
+
+.markdown h3 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.markdown ol {
+  margin-bottom: 1.25em;
+}
+
+.container {
+  max-width: 700px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  line-height: 1.8;
+}
+
+.answer-container {
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  font-size: 16px;
+  white-space: pre-wrap;
+}
+
+.question-section {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.question-section .content {
+  padding: 10px 20px;
+  width: 70%;
+  background: rgba(232, 232, 232, 0.5);
+  border-radius: 30px;
+}
+
+.answer-section {
+  margin-bottom: 20px;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 2em;
+}
+
+button:focus,
+button:hover {
+  border: 0;
+}
